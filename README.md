@@ -4,7 +4,7 @@ Redoing my web, repping 2023 me !
 
 
 To implement:
-- [ ] part of yesterweb webring
+- [ ] part of *some* webring
 - [ ] Neocities deployment
 - [ ] include personal art/assets 
 - [ ] MAXIMALISM
@@ -22,4 +22,8 @@ Inspirations:
 - webrings
 - geocities
 - unrestricted access to the internet from a v young age :D
-  
+
+
+-> two websites 
+-> buisnness 
+-> personal 
