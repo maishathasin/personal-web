@@ -3,7 +3,7 @@ Redoing my web, repping 2023 me !
 
 
 
-interesting to implement:
+To implement:
 - [ ] part of yesterweb webring
 - [ ] Neocities deployment
 - [ ] include personal art/assets 
