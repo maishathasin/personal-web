@@ -9,7 +9,7 @@ To implement:
 - [ ] include personal art/assets 
 - [ ] MAXIMALISM
 - [ ] should be messy
-- [ ] few bits (black and white)
+- [ ] 2/3 bits (black and white)
 - [ ] eshrines
 - [ ] site stats
 - [ ] pixelated
