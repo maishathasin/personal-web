@@ -17,6 +17,7 @@ TODO:
 
 Inspirations:
 - Early 2000s
+- nu - metal 
 - webrings
 - geocities
 - unrestricted access to the internet from a v young age :D
