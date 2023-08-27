@@ -4,9 +4,9 @@ Redoing my web, repping 2023 me !
 
 
 TODO:
-- [x] part of yesterweb webring
-- [x] Neocities deployment
-- [x] include personal art/assets 
+- ( [ ] ) part of yesterweb webring
+- ( [ ] ) Neocities deployment
+- ( [ ] ) include personal art/assets 
 - [x] MAXIMALISM
 - [x] should be messy
 - [x] 1/2 bit
