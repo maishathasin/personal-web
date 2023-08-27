@@ -4,14 +4,14 @@ Redoing my web, repping 2023 me !
 
 
 TODO:
-- [] part of yesterweb webring
-- [] Neocities deployment
-- [] include personal art/assets 
-- [] MAXIMALISM
-- [] should be messy
-- [] 1/2 bit
-- [] eshrines
-- [] site stats 
+- [x] part of yesterweb webring
+- [x] Neocities deployment
+- [x] include personal art/assets 
+- [x] MAXIMALISM
+- [x] should be messy
+- [x] 1/2 bit
+- [x] eshrines
+- [x] site stats 
 
 
 Inspirations:
