@@ -3,7 +3,7 @@ Redoing my web, repping 2023 me !
 
 
 
-TODO:
+interesting to implement:
 - [ ] part of yesterweb webring
 - [ ] Neocities deployment
 - [ ] include personal art/assets 
@@ -12,7 +12,8 @@ TODO:
 - [ ] few bits (black and white)
 - [ ] eshrines
 - [ ] site stats
-- [ ] pixelated 
+- [ ] pixelated
+- [ ] blinkies and buttons page
 
 
 Inspirations:
