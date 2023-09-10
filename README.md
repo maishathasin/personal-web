@@ -4,7 +4,7 @@ Redoing my web, repping 2023 me !
 
 
 To implement:
-- [ ] part of *some* webring
+- [ ] Make webring with fwends
 - [ ] Neocities deployment
 - [ ] include personal art/assets 
 - [ ] MAXIMALISM
