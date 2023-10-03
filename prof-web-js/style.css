@@ -210,12 +210,9 @@ img {
 
 .header {
   height: 20px;
-  background: linear-gradient(90deg, var(--dark) 0%, #00000000 100%), var(--dark);
-  border: 2px solid var(--light);
-  color: var(--contrastbg);
+
   text-align: left;
   line-height: 20px;
-  padding: 5px;
 }
 
 
@@ -223,9 +220,7 @@ img {
   height: 24px;
   width: 24px;
   image-rendering: pixelated;
-  line-height: 24px;
   float: left;
-  padding-right: 5px;
 }
 
 
@@ -335,24 +330,24 @@ img {
 
 /* main homepage div2 */
 #div2 {
-  display: block;
+  display: none;
   padding-bottom: 5px;
   left: 700px;
   bottom: 19%;
-  width: 513px;
+  width: 550px;
   height: 630px;
 }
 
 
 #div2 .content {
   width: 501px;
-  height: 452px;
+  height: 610;
 }
 
 
 #frame2 {
-  width: 500px;
-  height: 450px;
+  width: 535px;
+  height: 550px;
   border: 2px solid var(--darkest);
   margin: 0px;
   padding: 0px;
@@ -363,7 +358,7 @@ img {
 
 #div2 .cover {
   width: 450px;
-  height: 450px;
+  height: 500px;
   border: 1px solid var(--darkest);
 }
 
@@ -444,17 +439,16 @@ img {
   margin-top: 1px;
   overflow-y: scroll;
 }
-
-
-.title {
-  color: var(--dark);
+.title-bar .title {
+  padding: 0 0.5em;
+  margin: 0 auto;
+  font-size: 1.5rem;
   font-weight: bold;
-  text-decoration: underline;
-}
-
-
-.title img {
-  padding-right: 3px;
+  line-height: 1.1;
+  text-align: center;
+  background: var(--primary);
+  cursor: default;
+  font-family: Chicago_12;
 }
 
 
@@ -651,6 +645,16 @@ img {
   src: url("fonts/FindersKeepers.woff") format("woff");
   src: url("fonts/FindersKeepers.woff2") format("woff2");
 }
+
+@font-face {
+  font-family: "ChicagoFLF";
+  src: url("https://db.onlinewebfonts.com/t/1a243397695904f6f56e490ffd77a9cb.eot");
+  src: url("https://db.onlinewebfonts.com/t/1a243397695904f6f56e490ffd77a9cb.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/1a243397695904f6f56e490ffd77a9cb.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/1a243397695904f6f56e490ffd77a9cb.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/1a243397695904f6f56e490ffd77a9cb.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/1a243397695904f6f56e490ffd77a9cb.svg#ChicagoFLF")format("svg");
+}
 ::-webkit-scrollbar {
   width: 22px;
   background-color: var(--primary);
@@ -743,7 +747,7 @@ hr {
 */
 h1,
 .heading {
-  font-family: Chicago;
+  font-family: Pixelify Sans;
   font-size: 1em;
 }
 
@@ -1276,3 +1280,5 @@ ul [role="menu-item"].divider::after {
 .menu-items > li {
   margin-bottom: 1rem;
 }
+
+
