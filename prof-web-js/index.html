@@ -36,14 +36,35 @@
       <p id="clock" style="float: right;"></p>
     </div>
 
-    <div class="icons">
-      <button class="icon" onclick="openTab(5)"><img src="images\chatbox.png"><br>Chatbox</button>
-      <button class="icon" onclick="openTab(3)"><img src="images\terminal.png"><br>Terminal</button>
-      <button class="icon opennew" data-target="blog.html"><img src="images\notepad.png"><br><img src="images\shortcut.png" class="shortcut">Blog</button>
-      <button class="icon opennew" data-target="html/ephemerality.html	"><img src="images\explorer.png"><br><img src="images\shortcut.png" class="shortcut">Ephemeral</button>
-      <button class="icon" onclick="openTab (6)"><img src="images\other.png"><br>Updates</button>
-      <button class="icon" onclick="openTab (7)"><img src="images\todo32.png"><br>Info</button>
-    </div>
+
+
+    <div class="window" style="width: 1500px; height: 800px; margin-left: 100px; ">
+        <div class="title-bar">
+          <button aria-label="Close" class="close"></button>
+          <h1 class="title">Window With Details</h1>
+          <button aria-label="Resize" class="resize"></button>
+        </div>
+
+        <div class="details-bar">
+          <span>some</span>
+          <span>more</span>
+          <span>details</span>
+        </div>
+
+        <div >
+            <button class="icon" onclick="openTab(5)"><img src="images\chatbox.png"><br>Chatbox</button>
+            <button class="icon" onclick="openTab(3)"><img src="images\terminal.png"><br>Terminal</button>
+            <button class="icon opennew" data-target="blog.html"><img src="images\notepad.png"><br><img src="images\shortcut.png" class="shortcut">Blog</button>
+            <button class="icon opennew" data-target="html/ephemerality.html	"><img src="images\explorer.png"><br><img src="images\shortcut.png" class="shortcut">Ephemeral</button>
+            <button class="icon" onclick="openTab (6)"><img src="images\other.png"><br>Updates</button>
+            <button class="icon" onclick="openTab (7)"><img src="images\todo32.png"><br>Info</button>
+          </div>
+      
+      
+        <div class="window-pane">
+          Woo I got a details bar.
+        </div>
+      </div>
 
     <div id="div5" class="hidden-div draggable">
       <div class="header"><b>Chatbox</b>
@@ -98,6 +119,10 @@
           <div class="main-option border" data-src="html/miniblog.html" onclick="loadFrame(this)"><img src="https://i.imgur.com/sDRKyRf.png"><br>journal</div>
         </div>
     </div>
+
+
+
+    
 
     <div id="div6" class="hidden-div draggable">
       <div class="header"><img src="images\other.png"><b>Updates</b>
