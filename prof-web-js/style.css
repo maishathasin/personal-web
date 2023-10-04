@@ -330,19 +330,19 @@ img {
   padding-bottom: 5px;
   left: 700px;
   bottom: 19%;
-  width: 550px;
+  width: 580px;
   height: 630px;
 }
 
 
 #div2 .content {
-  width: 501px;
+  width: 570px;
   height: 610;
 }
 
 
 #frame2 {
-  width: 535px;
+  width: 565px;
   height: 550px;
   border: 2px solid var(--darkest);
   margin: 0px;
