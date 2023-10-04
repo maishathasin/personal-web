@@ -15,7 +15,6 @@ html {
 
 body {
   background: var(--background);
-  font-family: 'w95fa';
   overflow: hidden;
  
 }
@@ -53,7 +52,6 @@ img {
   margin: 3px;
   color: var(--darkest);
   font-weight: 900;
-  font-family: 'w95fa';
   font-size: 12px;
   height: 64px;
   width: 56px;
@@ -97,7 +95,6 @@ img {
   font-size: 14px;
   text-decoration: none;
   z-index: 9999;
-  font-family: 'w95fa';
 }
 
 
@@ -179,7 +176,6 @@ img {
   background-color: var(--light);
   padding: 7px;
   display: inline-block;
-  font-family: 'w95fa';
 }
 
 
@@ -437,7 +433,6 @@ img {
   width: 232px;
   margin-left: 2px;
   margin-top: 1px;
-  overflow-y: scroll;
 }
 .title-bar .title {
   padding: 0 0.5em;
@@ -448,7 +443,6 @@ img {
   text-align: center;
   background: var(--primary);
   cursor: default;
-  font-family: Chicago_12;
 }
 
 
@@ -516,7 +510,6 @@ img {
 }
 
 #toggleButton {
-  font-family: 'w95fa';
   color: var(--lightest);
   line-height: 20px;
   background-color: var(--dark);
@@ -625,35 +618,35 @@ img {
 
 @font-face {
   font-family: Chicago;
-  src: url("fonts/ChicagoFLF.woff") format("woff");
-  src: url("fonts/ChicagoFLF.woff2") format("woff2");
+  src: url("fonts/ChicagoFLF.woff") format("woff") auto !important;
+  src: url("fonts/ChicagoFLF.woff2") format("woff2"), auto !important;
 }
 @font-face {
   font-family: Monaco;
-  src: url("fonts/monaco.woff") format("woff");
-  src: url("fonts/monaco.woff2") format("woff2");
+  src: url("fonts/monaco.woff") format("woff"), auto !important;
+  src: url("fonts/monaco.woff2") format("woff2"), auto !important;
 }
 
 /* Fonts below are recreations by Giles Booth */
 @font-face {
   font-family: Chicago_12;
-  src: url("fonts/ChiKareGo2.woff") format("woff");
-  src: url("fonts/ChiKareGo2.woff2") format("woff2");
+  src: url("fonts/ChiKareGo2.woff") format("woff"), auto !important;
+  src: url("fonts/ChiKareGo2.woff2") format("woff2"), auto !important;
 }
 @font-face {
   font-family: Geneva_9;
-  src: url("fonts/FindersKeepers.woff") format("woff");
-  src: url("fonts/FindersKeepers.woff2") format("woff2");
+  src: url("fonts/FindersKeepers.woff") format("woff"), auto !important;
+  src: url("fonts/FindersKeepers.woff2") format("woff2"), auto !important;
 }
 
 @font-face {
   font-family: "ChicagoFLF";
-  src: url("https://db.onlinewebfonts.com/t/1a243397695904f6f56e490ffd77a9cb.eot");
+  src: url("https://db.onlinewebfonts.com/t/1a243397695904f6f56e490ffd77a9cb.eot"), auto !important;
   src: url("https://db.onlinewebfonts.com/t/1a243397695904f6f56e490ffd77a9cb.eot?#iefix")format("embedded-opentype"),
   url("https://db.onlinewebfonts.com/t/1a243397695904f6f56e490ffd77a9cb.woff2")format("woff2"),
   url("https://db.onlinewebfonts.com/t/1a243397695904f6f56e490ffd77a9cb.woff")format("woff"),
   url("https://db.onlinewebfonts.com/t/1a243397695904f6f56e490ffd77a9cb.ttf")format("truetype"),
-  url("https://db.onlinewebfonts.com/t/1a243397695904f6f56e490ffd77a9cb.svg#ChicagoFLF")format("svg");
+  url("https://db.onlinewebfonts.com/t/1a243397695904f6f56e490ffd77a9cb.svg#ChicagoFLF")format("svg"), auto !important;
 }
 ::-webkit-scrollbar {
   width: 22px;
@@ -747,7 +740,7 @@ hr {
 */
 h1,
 .heading {
-  font-family: Pixelify Sans;
+  font-family: Pixelify Sans, auto !important;
   font-size: 1em;
 }
 
