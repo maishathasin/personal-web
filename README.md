@@ -15,6 +15,7 @@ To implement:
 - [ ] pixelated
 - [ ] blinkies and buttons page
 - [ ] page visits
+- [ ] Move away from Cbox and implement own chat, with sqlite
 
 
 Inspirations:
