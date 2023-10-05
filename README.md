@@ -14,6 +14,7 @@ To implement:
 - [ ] site stats
 - [ ] pixelated
 - [ ] blinkies and buttons page
+- [ ] page visits
 
 
 Inspirations:
