@@ -82,15 +82,15 @@ img {
 
 
 /* bottom menu */
-.menu {
+.menu_low {
   position: fixed;
   width: 100%;
   height: 30px;
   bottom: 0;
   left: 0;
   padding: 4px;
-  color: var(--darkest);
-  background-color: var(--light);
+  color: black;
+  background-color: #000000;
   outline: 2px solid var(--lightest);
   font-size: 14px;
   text-decoration: none;
@@ -110,14 +110,17 @@ img {
 
 
 #clock {
-  background-color: var(--light);
-  padding: 5px;
+  background-color: white;
+  padding: 10px;
   margin-top: 1px;
-  margin-right: 10px;
+  margin-right: 4px;
   border: 2px solid var(--lightest);
   border-left: 2px solid var(--darkest);
   border-top: 2px solid var(--darkest);
   font-weight: 900;
+  position: absolute;
+  top: 0; /* Adjust the top position as needed */
+  right: 0; /* This will position it to the far right */
 }
 
 
@@ -172,8 +175,8 @@ img {
 
 .box {
   border: none;
-  border-right: 1px solid var(--darkest);
-  background-color: var(--light);
+  border-right: 10px solid var(--darkest);
+  background-color: white;
   padding: 7px;
   display: inline-block;
 }
@@ -296,20 +299,6 @@ img {
   padding: 0px;
 }
 
-
-.border {
-  border: 2px solid var(--lightest);
-  border-right: 2px solid var(--darkest);
-  border-bottom: 2px solid var(--darkest);
-}
-
-
-.border:active,
-.border:focus {
-  border: 2px solid var(--dark);
-  border-right: 2px solid #FFF1F7;
-  border-bottom: 2px solid #FFF1F7;
-}
 
 
 /* Additional CSS for dragging */
@@ -490,42 +479,24 @@ img {
 
 
 /* corner image styling */
-.cornerimg {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  bottom: 3%;
-  width: 100%;
-}
 
-.cornerimg img {
-  float: left;
-  z-index: 5;
-  height: 160px;
-}
 
 .toggle-image {
   display: none;
 }
 
 #toggleButton {
-  color: var(--lightest);
   line-height: 20px;
-  background-color: var(--dark);
-  border: 2px solid var(--shadow);
-  border-right: 2px solid var(--darkest);
-  border-bottom: 2px solid var(--darkest);
+ 
   float: left;
   margin-right: 3px;
   height: 31px;
 }
 
 #toggleButton:active {
-  background-color: var(--dark);
-  border: 2px solid var(--dark);
-  border-right: 2px solid #ffffff95;
-  border-bottom: 2px solid #ffffff95;
+  border: 1px solid var(--dark);
+
+  
 }
 
 #toggleButton img {
@@ -1203,7 +1174,7 @@ ul[role] {
 }
 ul[role="menu-bar"] {
   display: flex;
-  background: var(--primary);
+  background: black;
 }
 ul[role="menu-bar"] > [role="menu-item"] {
   position: relative;
@@ -1226,6 +1197,7 @@ ul[role="menu"] {
   color: initial;
   border: 1px solid;
   box-shadow: var(--box-shadow);
+  top: auto; /* Change 'top' to 'auto' to make it a drop-up */
 }
 ul[role="menu"]::before {
   content: "";
@@ -1239,7 +1211,7 @@ ul[role="menu"]::before {
   display: none;
   position: absolute;
   left: 0;
-  top: 100%;
+  bottom: 100%; /* Change 'top' to 'bottom' to make it a drop-up */
   z-index: 99;
 }
 ul[role="menu"] > [role="menu-item"] > a, ul[role="menu"] > [role="menu-item"] > button, ul[role="menu"] > [role="menu-item"][aria-haspopup="true"] {
@@ -1274,4 +1246,220 @@ ul [role="menu-item"].divider::after {
   margin-bottom: 1rem;
 }
 
+
+* Sidenotes, margin notes, figures, captions */
+img {
+    max-width: 100%;
+}
+
+.sidenote,
+.marginnote {
+    float: right;
+    clear: right;
+    margin-right: -60%;
+    width: 50%;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    vertical-align: baseline;
+    position: relative;
+}
+
+.sidenote-number {
+    counter-increment: sidenote-counter;
+}
+
+.sidenote-number:after,
+.sidenote:before {
+    font-family: et-book-roman-old-style;
+    position: relative;
+    vertical-align: baseline;
+}
+
+.sidenote-number:after {
+    content: counter(sidenote-counter);
+    font-size: 1rem;
+    top: -0.5rem;
+    left: 0.1rem;
+}
+
+.sidenote:before {
+    content: counter(sidenote-counter) " ";
+    font-size: 1rem;
+    top: -0.5rem;
+}
+
+blockquote .sidenote,
+blockquote .marginnote {
+    margin-right: -82%;
+    min-width: 59%;
+    text-align: left;
+}
+
+div.fullwidth,
+table.fullwidth {
+    width: 100%;
+}
+
+div.table-wrapper {
+    overflow-x: auto;
+    font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
+}
+
+.sans {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    letter-spacing: .03em;
+}
+
+code, pre > code {
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 1.0rem;
+    line-height: 1.42;
+    -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
+}
+
+.sans > code {
+    font-size: 1.2rem;
+}
+
+h1 > code,
+h2 > code,
+h3 > code {
+    font-size: 0.80em;
+}
+
+.marginnote > code,
+.sidenote > code {
+    font-size: 1rem;
+}
+
+pre > code {
+    font-size: 0.9rem;
+    width: 52.5%;
+    margin-left: 2.5%;
+    overflow-x: auto;
+    display: block;
+}
+
+pre.fullwidth > code {
+    width: 90%;
+}
+
+.fullwidth {
+    max-width: 90%;
+    clear:both;
+}
+
+span.newthought {
+    font-variant: small-caps;
+    font-size: 1.2em;
+}
+
+input.margin-toggle {
+    display: none;
+}
+
+label.sidenote-number {
+    display: inline-block;
+    max-height: 2rem; /* should be less than or equal to paragraph line-height */
+}
+
+label.margin-toggle:not(.sidenote-number) {
+    display: none;
+}
+
+.iframe-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 760px) {
+    body {
+        width: 84%;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    hr,
+    section > p,
+    section > footer,
+    section > table {
+        width: 100%;
+    }
+
+    pre > code {
+        width: 97%;
+    }
+
+    section > dl,
+    section > ol,
+    section > ul {
+        width: 90%;
+    }
+
+    figure {
+        max-width: 90%;
+    }
+
+    figcaption,
+    figure.fullwidth figcaption {
+        margin-right: 0%;
+        max-width: none;
+    }
+
+    blockquote {
+        margin-left: 1.5em;
+        margin-right: 0em;
+    }
+
+    blockquote p,
+    blockquote footer {
+        width: 100%;
+    }
+
+    label.margin-toggle:not(.sidenote-number) {
+        display: inline;
+    }
+
+    .sidenote,
+    .marginnote {
+        display: none;
+    }
+
+    .margin-toggle:checked + .sidenote,
+    .margin-toggle:checked + .marginnote {
+        display: block;
+        float: left;
+        left: 1rem;
+        clear: both;
+        width: 95%;
+        margin: 1rem 2.5%;
+        vertical-align: baseline;
+        position: relative;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    div.table-wrapper,
+    table {
+        width: 85%;
+    }
+
+    img {
+        width: 100%;
+    }
+  }
 

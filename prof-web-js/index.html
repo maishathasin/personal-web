@@ -3,6 +3,8 @@
 
   <head>
     <link href="https://db.onlinewebfonts.com/c/1a243397695904f6f56e490ffd77a9cb?family=ChicagoFLF" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Pixelify+Sans&display=swap">
+
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
@@ -13,36 +15,45 @@
   </head>
 
   <body onload="startTime()">
-    <div class="menu">
-      <div class="drop-up"> 
-        <button class="box border" onclick="toggleDropUp()"><B>Start</B></button>
-        <div class="drop-up-content" id="dropUpContent">
-          <a href="#" onclick="openTab(2)"><img src="images\computer.png">Home</a>
-          <a href="#" onclick="openTab(3)"><img src="images\terminal.png">Terminal</a>
-          <a href="#" onclick="openTab(5)"><img src="images\chatbox.png">Chatbox</a>
-          <a href="#" onclick="openTab(6)"><img src="images\other.png">Updates</a>
-          <a href="#" onclick="openTab(7)"><img src="images\todo32.png">Information</a>
-          <div class="drop-divider"> </div>
-          <a href="#" onclick="openTab(5)"><img src="images\logoff.png">Log off</a>
-          <a href="#" onclick="openTab(5)"><img src="images\shutdownn.png">Shut down</a>
+
+
+    <div class="menu-container">
+
+    <div class="menu_low">
+        <ul role="menu-bar">
+            <li role="menu-item" tabindex="0" aria-haspopup="true" style ="color: antiquewhite;">
+              Menu
+              <ul role="menu">
+                <li role="menu-item"> <a href="#" onclick="openTab(2)"> <h1> About</h1></a></li>
+                <li role="menu-item"><a href="#" onclick="openTab(3)"> <h1> Bookshelf</h1></a></li>
+                <li role="menu-item"><a href="#" onclick="openTab(4)"> <h1> Blog</h1></a></li> 
+                <li role="menu-item"><a href="#" onclick="openTab(5)"> <h1> Chat</h1></a></li>
+                <li role="menu-item"><a href="#" onclick="openTab(6)"> <h1> Updates</h1></a></li>
+                <li role="menu-item"><a href="#" onclick="openTab(7)"> <h1> Information</h1></a></li>
+              </ul>
+            </li>
+            <button class="box border" id="tab2" onclick="closeTab(2)"><h1 style = "margin-top: 2%;" > About</h1></button>
+            <button class="box border" id="tab3" onclick="closeTab(3)" style="display:none"> <h1 style = "margin-top: 2%;"> Bookshelf</h1></button>
+            <button class="box border" id="tab4" onclick="closeTab(4)" style="display:none"><h1 style = "margin-top: 2%;">Blog</h1></button>
+            <button class="box border" id="tab5" onclick="closeTab(5)" style="display:none"><h1 style = "margin-top: 2%;">Chatbox</h1></button>
+            <button class="box border" id="tab6" onclick="closeTab(6)"><h1 style = "margin-top: 2%;">Updates</h1></button>
+            <button class="box border" id="tab7" onclick="closeTab(7)"><h1 style = "margin-top: 2%;">Information</h1></button>
+            <div><p id="clock" ></p></div>
+            
+            
+      
         </div>
       </div>
-      <div class="divider"></div>
-      <button class="box border" id="tab2" onclick="closeTab(2)">Home</button>
-      <button class="box border" id="tab3" onclick="closeTab(3)" style="display:none">Terminal</button>
-      <button class="box border" id="tab4" onclick="closeTab(4)" style="display:none">Blog</button>
-      <button class="box border" id="tab5" onclick="closeTab(5)" style="display:none">Chatbox</button>
-      <button class="box border" id="tab6" onclick="closeTab(6)">Updates</button>
-      <button class="box border" id="tab7" onclick="closeTab(7)">Information</button>
-      <p id="clock" style="float: right;"></p>
     </div>
+  </div>
+
 
 
 
     <div class="window" style="width: 1500px; height: 800px; margin-left: 100px; ">
         <div class="title-bar">
           <button aria-label="Close" class="close"></button>
-          <h1 class="title">Window With Details</h1>
+          <h1 class="title">Home</h1>
           <button aria-label="Resize" class="resize"></button>
         </div>
 
@@ -52,10 +63,13 @@
           <span>details</span>
         </div>
 
+
+       
+
         <div >
             <button class="icon" onclick="openTab(2)" style="margin-right: 5rem; margin: 3rem;margin-left: 3rem;"><img src="images\chatbox.png"><br>About</button> 
             <button class="icon" onclick="openTab(5)" style="margin-right: 5rem; margin: 3rem;margin-left: 3rem;"><img src="images\chatbox.png"><br>Chatbox</button>
-            <button class="icon" onclick="openTab(3)" style="margin-right: 5rem; margin: 3rem;margin-left: 3rem;"><img src="images\terminal.png"><br>Terminal</button>
+            <button class="icon" onclick="openTab(3)" style="margin-right: 5rem; margin: 3rem;margin-left: 3rem;"><img src="images\terminal.png"><br>Bookshelf</button>
             <button class="icon opennew" data-target="blog.html" style="margin-right: 5rem; margin: 3rem;margin-left: 3rem;"><img src="images\notepad.png"><br><img src="images\shortcut.png" class="shortcut">Blog</button>
             <button class="icon opennew" data-target="html/ephemerality.html" style="margin-right: 5rem; margin: 3rem;margin-left: 3rem;"><img src="images\explorer.png"><br><img src="images\shortcut.png" class="shortcut">Ephemeral</button>
             <button class="icon" onclick="openTab (6)" style="margin-right: 5rem; margin: 3rem;margin-left: 3rem;"><img src="images\other.png"><br>Updates</button>
@@ -63,24 +77,22 @@
           </div>
       
       
-        <div class="window-pane">
-        </div>
       </div>
 
     <div id="div5" class="hidden-div draggable window">
         <div class="title-bar header">
             <button aria-label="Close" class="close" onclick="closeTab(5)"></button>
-            <h1 class="title  font-bold"  >Window With Stuff</h1>
+            <h1 class="title  font-bold" style ="font-family: Pixelify Sans;"  >Chat</h1>
             <button aria-label="Resize" class="resize"></button>
           </div>
       <div class="content">
-        <iframe src="https://www5.cbox.ws/box/?boxid=932992&boxtag=gZWV9Y" width="100%" height="260" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+        <iframe src="https://www3.cbox.ws/box/?boxid=3532283&boxtag=POjsz8" width="100%" height="260" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
       </div>
     </div>
 
     <div id="div3" class="hidden-div draggable">
-      <div class="header"><img src="images\terminal.png"><b>Terminal</b><button class="x-button border" onclick="closeTab(3)">X</button></div>
-      <div class="content"><iframe src="html/terminal.html" height="300" width="485"></iframe></div>
+      <div class="header"><img src="images\terminal.png"><b>Bookshelf</b><button class="x-button border" onclick="closeTab(3)">X</button></div>
+      <div class="content"><iframe src="bookshelf.html" height="300" width="485"></iframe></div>
     </div>
 
     <div id="div4" class="hidden-div draggable">
@@ -128,36 +140,41 @@
 
 
       <div class="window-pane">
-        <span class="title"><img src="images/berry.png">Oct 4th 2023:</span><br>
+        <span class="title"><img src="toroblackflop.gif">Oct 7th 2023:</span><br>
+        <h6>
+        Fixed nav bar, added clock, need to fix the clock. Also fixed some bugs. Need to figure out how to slide in the menu bar
+    </h6>
+        <br><br>
+        <span class="title"><img src="toroblackflop.gif">Oct 4th 2023:</span><br>
         <h6>
         Finished the About page, did lo-fi on figma, will release that soon
     </h6>
         <br><br>
-        <span class="title"><img src="images/berry.png">Oct 3rd 2023:</span><br>
+        <span class="title"><img src="toroblackflop.gif">Oct 3rd 2023:</span><br>
         <h6>
         Been a while :// forgot to update in a minute, scrapped the previous project and started using scrictly html/css/javascript, everything's <br>
         coming together well, need to scan my artwork to post when it's finished! 
     </h6>
         <br><br>
-        <span class="title"><img src="fumble.gif"> Sep 10 2023:</span><br>
+        <span class="title"><img src="toroblackflop.gif"> Sep 10 2023:</span><br>
         <h6>
         Figured how to emulate the closing and opening window, it's been a while I forgot javascript :/. Thinking of scraping using react and other 
          frameworks, and do it strictly with javascript/html/css.
         </h6>
         <br><br>
-        <span class="title"><img src="spacer.gif">Sep 8 2023:</span><br>
+        <span class="title"><img src="toroblackflop.gif">Sep 8 2023:</span><br>
         <h6>
         Found a repository of Artbit icons for Hypercard while in a rabbit hole of old web links!! Upddated the webiste with new icons.
         </h6>
         <br><br>
-        <span class="title"><img src="spacer.gif">Sep 1 2023:</span><br>
+        <span class="title"><img src="toroblackflop.gif">Sep 1 2023:</span><br>
         <h6>
         Found a really pog framework system.css that reminded me of Macbook Hypercards, I think I want this website <br>
         to really envoke nostalgia, and early 00s,  I'll stick with that, created very basic outline of what the website should 
          look like. 
         </h6>
         <br><br>
-        <span class="title"><img src="prof-web-js/spacer.gif">27th Aug 2023:</span><br>
+        <span class="title"><img src="toroblackflop.gif">27th Aug 2023:</span><br>
         <h6>
         Figured out some features I want and finally started project with Typescript, next.js, react<br>
         What this website should be:<br>
@@ -188,34 +205,9 @@
         - make some changes to improve readability (fix contrast isses in some places) <br>
         - some sort of music player? maybe at the bottom of this "information" tab <br>
         - <s>maybe redo the theme</s> 23/08/23 <br><br>
-        <div id='women-web'>
-          <script type="text/javascript" src="https://womenoftheinternet.neocities.org/files/onionring-variables.js"></script>
-          <script type="text/javascript" src="https://womenoftheinternet.neocities.org/files/mono-badge.js"></script>
-        </div>
-        <div class="infobottomdecor">
-          <img src="images/button.gif">
-          <img src="https://i.imgur.com/5QrevDk.gif" style="filter: sepia(40%);">
-          <a href="http://www.disappeared.de/" target="_blank"><img src="https://i.imgur.com/qI9MYo8.gif" style="filter: sepia(40%);"></a>
-          <a href="http://whimsical.heartette.net/" target="_blank"><img src="https://i.imgur.com/a9Cgecr.gif" style="filter: sepia(40%);"></a>
-          <img src="images/neocitiesbutton.gif" style="filter: sepia(30%);">
-          <img src="https://i.imgur.com/Jh8fbvE.gif" style="filter: sepia(30%);">
-          <img src="https://i.imgur.com/rWvNuJt.gif" style="filter: sepia(30%);">
-          <button id="toggleButton"><img src="https://i.imgur.com/y1wYTEL.png">click me!</button>
-          <a href="http://whimsical.heartette.net/" target="_blank"><img src="https://i.imgur.com/LFML8QH.gif" style="filter: sepia(40%);"></a>
-        </div>
+       
         
       </div>
-    </div>
-
-    <div class="cornerimg">
-      <img src="images/shells/shell1.png" class="toggle-image">
-      <img src="images/shells/shell2.png" class="toggle-image">
-      <img src="images/shells/shell3.png" class="toggle-image">
-      <img src="images/shells/shell4.png" class="toggle-image">
-      <img src="images/shells/shell5.png" class="toggle-image">
-      <img src="images/shells/shell6.png" class="toggle-image">
-      <img src="images/shells/shell7.png" class="toggle-image">
-      <img src="images/shells/shell8.png" class="toggle-image">
     </div>
 
 
