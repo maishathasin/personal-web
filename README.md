@@ -10,7 +10,6 @@ To implement:
 - [ ] MAXIMALISM
 - [ ] should be messy
 - [X] 2/3 bits (black and white)
-- [ ] eshrines
 - [ ] pixelated
 - [ ] blinkies and buttons page
 - [ ] page visits
