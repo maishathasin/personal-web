@@ -9,9 +9,8 @@ To implement:
 - [ ] include personal art/assets 
 - [ ] MAXIMALISM
 - [ ] should be messy
-- [ ] 2/3 bits (black and white)
+- [X] 2/3 bits (black and white)
 - [ ] eshrines
-- [ ] site stats
 - [ ] pixelated
 - [ ] blinkies and buttons page
 - [ ] page visits
