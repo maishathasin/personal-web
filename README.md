@@ -9,11 +9,12 @@ To implement:
 - [ ] include personal art/assets 
 - [ ] MAXIMALISM
 - [ ] should be messy
-- [ ] 2/3 bits (black and white)
-- [ ] eshrines
-- [ ] site stats
+- [X] 2/3 bits (black and white)
 - [ ] pixelated
 - [ ] blinkies and buttons page
+- [ ] page visits
+- [ ] Move away from Cbox and implement own chat, with sqlite
+- [ ] Some sort of music player 
 
 
 Inspirations:
