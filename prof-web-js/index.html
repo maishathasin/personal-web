@@ -29,7 +29,7 @@
                 <li role="menu-item"><a href="#" onclick="openTab(4)"> <h1> Blog</h1></a></li> 
                 <li role="menu-item"><a href="#" onclick="openTab(5)"> <h1> Chat</h1></a></li>
                 <li role="menu-item"><a href="#" onclick="openTab(6)"> <h1> Updates</h1></a></li>
-                <li role="menu-item"><a href="#" onclick="openTab(7)"> <h1> Information</h1></a></li>
+                <li role="menu-item"><a href="#" onclick="openTab(7)"> <h1> Recipes</h1></a></li>
               </ul>
             </li>
             <button class="box border" id="tab2" onclick="closeTab(2)"><h1 style = "margin-top: 2%;" > About</h1></button>
@@ -37,7 +37,7 @@
             <button class="box border" id="tab4" onclick="closeTab(4)" style="display:none"><h1 style = "margin-top: 2%;">Blog</h1></button>
             <button class="box border" id="tab5" onclick="closeTab(5)" style="display:none"><h1 style = "margin-top: 2%;">Chatbox</h1></button>
             <button class="box border" id="tab6" onclick="closeTab(6)"><h1 style = "margin-top: 2%;">Updates</h1></button>
-            <button class="box border" id="tab7" onclick="closeTab(7)"><h1 style = "margin-top: 2%;">Information</h1></button>
+            <button class="box border" id="tab7" onclick="closeTab(7)"><h1 style = "margin-top: 2%;">Recipes</h1></button>
             <div><p id="clock" ></p></div>
             
             
@@ -191,24 +191,26 @@
       </div>
     </div>
 
-    <div id="div7" class="hidden-div draggable">
-      <div class="header"><img src="images\todo32.png"><b>Information</b>
-        <button class="x-button border" onclick="closeTab(7)">X</button>
-      </div>
-      <div class="content">
 
-        <span class="title">site to do list</span><Br>
-        - add a pixel garden page <br>
-        - add a notepad tab with ascii art <br>
-        - add more links to mutuals and sites i like <br>
-        - decrease image sizes <br>
-        - make some changes to improve readability (fix contrast isses in some places) <br>
-        - some sort of music player? maybe at the bottom of this "information" tab <br>
-        - <s>maybe redo the theme</s> 23/08/23 <br><br>
-       
-        
+    <div id="div7" class="hidden-div draggable window">
+      <div class="title-bar header">
+          <button aria-label="Close" class="close" onclick="closeTab(7)"></button>
+          <h1 class="title  font-bold"  >Recipes</h1>
+          <button aria-label="Resize" class="resize"></button>
+        </div>
+        <div class="details-bar">
+          <span class="nav-tab"><u>F</u>ile</span> <span class="nav-tab"><u>E</u>dit</span><span class="nav-tab"><u>S</u>earch</span><span class="nav-tab"><u>H</u>elp</span>
+        </div>
+
+    <span class="nav-search-bar">
+
+      <div class="content">
+        <iframe src="Recipes.html" id="frame7"></iframe>
       </div>
-    </div>
+  
+  </div>
+
+
 
 
     <script >

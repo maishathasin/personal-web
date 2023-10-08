@@ -1,7 +1,6 @@
 
   
   :root {
-    text-transform: lowercase;
     letter-spacing: -0.5px;
   }
   
@@ -24,19 +23,13 @@
   }
   
   body {
-    --background: url("https://i.pinimg.com/236x/c1/c7/57/c1c7570b5c5df48abdadebbf0079aac3.jpg");
-    --contrastbg: #EAE1CC;
-    --lightest: #EAE1CC;
-    --light: #acbcae;
-    --mid: #78a185;
-    --shadow: #768677;
-    --dark: #4a564a;
+
     --darkest: #191f19;
   }
   
   
   ::selection {
-    background-color: var(--shadow);
+    background-color: grey;
     color: var(--contrastbg);
   }
   

@@ -438,8 +438,8 @@ img {
 /* information / to do div7 */
 #div7 {
   display: block;
-  width: 250px;
-  height: 500px;
+  width: 400px;
+  height: 700px;
   padding-bottom: 2px;
   left: 435px;
   bottom: 25%;
@@ -448,34 +448,20 @@ img {
 }
 
 
-#div7 .content {
-  background-color: var(--contrastbg);
+#frame7 {
+  width: 387px;
+  height: 625px;
   border: 2px solid var(--darkest);
-  border-right: 2px solid var(--lightest);
-  border-bottom: 2px solid var(--lightest);
-  height: 90%;
-  width: 232px;
-  margin-left: 2px;
-  margin-top: 1px;
+  margin: 0px;
+  padding: 0px;
+  display:block;
+  background-color: var(--contrastbg);
 }
 
 
-#div7 #women-web {
-  outline: 1px dotted var(--shadow);
-  margin: 2px;
-  margin-bottom: 10px;
-  padding: 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-
-}
 
 
-#div7 #women-web a {
-  color: var(--dark);
-}
+
 
 
 /* corner image styling */
