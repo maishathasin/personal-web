@@ -1,24 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>System.css Starter</title>
+    <title>Book shelf </title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="tufte.css"/>
-    <div class="epigraph">
-        <blockquote>
-          <p>The English language . . . becomes ugly and inaccurate because our thoughts are foolish, but the slovenliness of our language makes it easier for us to have foolish thoughts.</p>
-          <footer>George Orwell, “Politics and the English Language”</footer>
-        </blockquote>
-        <blockquote>
-          <p>For a successful technology, reality must take precedence over public relations, for Nature cannot be fooled.</p>
-          <footer>Richard P. Feynman, <cite>“What Do You Care What Other People Think?”</cite></footer>
-        </blockquote>
-        <blockquote>I do not paint things, I paint only the differences between things.<footer>Henri Matisse, <cite>Henri Matisse Dessins: thèmes et variations</cite> (Paris, 1943), 37</footer></blockquote>
-      </div>
+    <style>
+      
+  book {
+    font-style: italic;
+    position: relative;
+    max-width: 80%;
+    min-width: 80%;
+    display: inline-block;
+    height: 0rem;
+    line-height: normal;
+  }
+  rating {
+    float: right;
+    max-width: 5rem;
+    min-width: 5rem;
+    font-style: italic;
+    text-align: right;
+    color: gray;
+  }
+  .marginnote {
+    float: right;
+    clear: right;
+    margin-right: -90%;
+    width: 50%;
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 1.3;
+    border-left: 1px solid #ccc;
+    padding-left: 1rem;
+    vertical-align: baseline;
+    position: relative;
+}
+  nowrap {
+    white-space: nowrap;
+  }
+    </style>
+
+    <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
 </head>
 <body>
+    <div style = " word-wrap: break-word;">
+      <div style="display: flex; align-items: center;">
+      <img src="2_book.png" style="max-width: 100px; margin-right: 10px;">
+        <h1 style ="font-family:Chicago; font-size: 200%;">BOOKS</h1>
 
-    <h1> Posts</h1>
-    
+        Some collection of books 
+      </div>
+
+
+
+
+
+
+      <hr style="border: 1px solid black;">
+
+
+      <book>
+        Mathematical Proofs: A transition to Advanced Mathematics
+        <series><nowrap>--- Gary Chartrand </series>
+        <span class="marginnote">
+        Two of the funniest books I've read to date.
+        </span>
+        </book>
+        <rating> * * * * *</rating>
+        <br> <br>
+        <book>
+          Galois theory
+          <series><nowrap>--- Emily Artin </nowrap> </series>
+          <span class="marginnote">
+          </span>
+          </book>
+          <rating> * * </rating>
+            <br><br>
+            <book>
+              The Myth of Sysiphs
+              <series><nowrap>--- Albert Camus </nowrap> </series>
+              <span class="marginnote">
+                I remember reading this in highschool and not really feeling anything, came back to it after reading innocenté and have been dreading 
+              </span>
+              </book>
+              <rating> * * </rating>
+              
+
+      
+
+       
+        
+
+  
+     
 </body>
 </html>

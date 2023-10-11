@@ -90,10 +90,41 @@
       </div>
     </div>
 
-    <div id="div3" class="hidden-div draggable">
-      <div class="header"><img src="images\terminal.png"><b>Bookshelf</b><button class="x-button border" onclick="closeTab(3)">X</button></div>
-      <div class="content"><iframe src="bookshelf.html" height="300" width="485"></iframe></div>
-    </div>
+  
+
+
+    <div id="div3" class="hidden-div draggable window">
+      <div class="title-bar header">
+          <button aria-label="Close" class="close" onclick="closeTab(3)"></button>
+          <h1 class="title  font-bold"  >Bookshelf</h1>
+          <button aria-label="Resize" class="resize"></button>
+        </div>
+        <div class="details-bar">
+          <span class="nav-tab"><u>F</u>ile</span> <span class="nav-tab"><u>E</u>dit</span><span class="nav-tab"><u>S</u>earch</span><span class="nav-tab"><u>H</u>elp</span>
+        </div>
+
+    <span class="nav-search-bar">
+
+      <div class="content">
+        <iframe src="bookshelf.html" id="frame3"></iframe>
+      </div>
+  
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div id="div4" class="hidden-div draggable">
       <div class="header"><img src="images\notepad.png"><b>blog</b>
