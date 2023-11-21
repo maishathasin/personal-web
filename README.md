@@ -1,6 +1,8 @@
 # personal-web
 Redoing my web, repping 2023 me ! 
 
+Currently very mobile unfriendly, make design responsive 
+
 
 
 To implement:
